@@ -1,4 +1,5 @@
-<h1 align="center"> Artificial-Intelligence-Project </h1>
+<h1 align="center"> 18CSC305J-Artificial-Intelligence-Project </h1>
+<h2> Automatic Text Summariser </h2>
 <h3> Abstract </h3>
 
 The concept of text summarisation is to create a shorter version of a text document/file that will accurately summarise all the content in the file. Considering the fact that there is an ever-growing amount of text data that is available online, it becomes difficult to go through all of them. Text summarisation will help address this issue, as we will go through lesser and more relevant information from these documents. Another advantage of automatic text summarisation is that there will be less bias, as humans are not the ones creating the summaries. We will be using the concept of Natural Language Processing to summarise the text.
