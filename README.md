@@ -29,11 +29,12 @@ The concept of text summarisation is to create a shorter version of a text docum
  * Basic concepts of NLP.
  * Cosine Similarity and Similarity Matrix.
  * Page Rank Algorithm.
- * HTML, CSS, Bootstrap, Python-flask
 ### Software Requirements:
  * NLTK (for stopwords and cosine similarity).
  * Networkx (for page rank algorithm).
  * Numpy (for building matrix).
+ * HTML, CSS, Bootstrap, Python-flask
+
 
 
 ## License 
