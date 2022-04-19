@@ -23,6 +23,19 @@ The concept of text summarisation is to create a shorter version of a text docum
 ![result](https://user-images.githubusercontent.com/70643852/163853470-c9d340eb-f77b-4b18-ab63-25cc2617692a.png)
 
 
+## Requirments
+### Technical Requirements:
+ * Concepts of File Handling in Python.
+ * Basic concepts of NLP.
+ * Cosine Similarity and Similarity Matrix.
+ * Page Rank Algorithm.
+ * HTML, CSS, Bootstrap, Python-flask
+### Software Requirements:
+ * NLTK (for stopwords and cosine similarity).
+ * Networkx (for page rank algorithm).
+ * Numpy (for building matrix).
+
+
 ## License 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <br/>
