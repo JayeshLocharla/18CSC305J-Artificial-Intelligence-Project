@@ -36,8 +36,8 @@
         <div class="card" style="width: 80rem;">
             <div class="card-body">
                 <p class="card-text">{{ txt }}</p>
-                <a href="#" class="card-link">Try again</a>
-                <a href="#" class="card-link">Home</a>
+                <a href="{{ url_for('getstarted') }}" class="card-link">Try again</a>
+                <a href="{{ url_for('home') }}" class="card-link">Home</a>
             </div>
         </div>
     </div>
