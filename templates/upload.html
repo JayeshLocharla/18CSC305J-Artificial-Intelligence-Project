@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="bg-image bg-custom"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp'); height: 100vh;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="{{ url_for('home') }}">
+                    <h5>Text Summarizer</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="{{ url_for('home') }}">
+                                <h6>Home</h6>
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="{{ url_for('getstarted') }}">
+                                <h6>Get Started</h6>
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link active" href="{{ url_for('upload') }}">
+                                <h6>Upload</h6>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-5 mx-auto">
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                <fieldset class="form-group">
+                    <div class="row">
+                        <div class="drag-area dancingscript_nosizing form-group">
+                            <header>Drag & Drop to Upload File</header>
+                            <span>OR</span>
+                            <div class="button" allign="center">
+                                {{ form.file(class="form-control-file btn btn-outline-light btn-lg bold border-radius") }}
+                            </div>
+                            <input type="file" hidden>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mx-1 dancingscript_nosizing form-group">
+                        {{ form.submit(class="btn btn-outline-light btn-lg bold border-radius") }}
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+{% endblock content %}

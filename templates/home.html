@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="bg-image bg-custom"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.webp'); height: 100vh;">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light shadow-5-strong">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-5" href="{{ url_for('home') }}">
+                    <h5>Text Summarizer</h5>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">
+                            <h6>Home</h6>
+                        </a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="{{ url_for('getstarted') }}">
+                                <h6>Get Started</h6>
+                            </a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ url_for('upload') }}">
+                                <h6>Upload</h6>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="empty"></div>
+
+        <div class="container pt-5">
+            <div class="row row-cols-auto">
+                <div class="col-sm-5 ms-5 ps-5 dancingscript">
+                    <p>Automatic Text Summarizer</p>
+                </div>
+                <div class="col mt-5 pt-5 dancingscript_nosizing">
+                    <div class="row row-cols-auto">
+                        <div class="col mt-4 pt-5 dancingscript_nosizing">
+                            <p>Too Lazy? We got you covered</p>
+                        </div>
+                        <div class="col mt-4 pt-5 dancingscript_nosizing">
+                            <a href="{{ url_for('getstarted') }}"><button type="button" class="btn btn-outline-light btn-lg ms-4 bold border-radius">Get Started</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

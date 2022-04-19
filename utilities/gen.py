@@ -7,7 +7,7 @@ sys.path.append('../utilities')
 from utilities.config import read_article
 from utilities.nlp import build_similarity_matrix
 
-def generate_summary(file_name, top_n = 5):
+def generate_summary(file_name, top_n=5):
     stop_words = stopwords.words('english')
     summarize_text = []
 
@@ -28,4 +28,6 @@ def generate_summary(file_name, top_n = 5):
       summarize_text.append(" ".join(ranked_sentence[i][1]))
 
     # Step 5 - Offcourse, output the summarize texr
-    print("Summarize Text: \n", ". ".join(summarize_text))
+    # print("Summarize Text: \n", ". ".join(summarize_text))
+
+    return summarize_text
